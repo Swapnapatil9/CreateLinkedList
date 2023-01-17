@@ -7,8 +7,8 @@ public class LinkedList<E> {
             head=newNode;
             tail=newNode;
         } else {
-            tail.next= newNode;
-            tail= newNode;
+            newNode.next= head;
+            head= newNode;
         }
     }
     public void display(){
