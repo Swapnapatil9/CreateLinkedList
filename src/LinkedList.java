@@ -30,4 +30,11 @@ public class LinkedList<E> {
             tail = newNode;
         }
     }
+    public E pop() {
+        if(head == null)
+            return null;
+        E popData = head.key;
+        head = head.next;
+        return popData;
+    }
 }
