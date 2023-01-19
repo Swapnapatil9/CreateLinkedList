@@ -2,13 +2,13 @@ public class LinkedList<E> {
     Node<E> head;
     Node<E> tail;
 
+
     public void display() {
         Node<E> temp = head;
         while (temp != null) {
             System.out.print(temp.key + " -> ");
             temp = temp.next;
         }
-        System.out.println();
     }
 
     public void append(E data) {
@@ -21,8 +21,9 @@ public class LinkedList<E> {
             tail = newNode;
         }
     }
+
     public E popLast() {
-        if(head == null)
+        if (head == null)
             return null;
         E popElement = tail.key;
         Node<E> temp = head;
@@ -32,5 +33,6 @@ public class LinkedList<E> {
         temp.next = null;
         tail = temp;
         return popElement;
+
     }
 }

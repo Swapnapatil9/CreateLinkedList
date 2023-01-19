@@ -17,6 +17,5 @@ public class LinkedListMain {
             System.out.println("Pop Last Element " + popLastElement);
 
         linkedList2.display();
-
     }
 }
